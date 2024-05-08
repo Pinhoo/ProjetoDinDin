@@ -116,3 +116,33 @@ body{
   .signFormButton:hover {
     background-color: #0056b3;
   }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: #222121;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+}
+
+.grid-header {
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+}
+
+.newbackground{
+    background-color: rgb(102, 102, 102);
+}
+
+.gridCss{
+    grid-template-columns:none !important;
+    
+}
