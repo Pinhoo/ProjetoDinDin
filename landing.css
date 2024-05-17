@@ -122,7 +122,8 @@ body{
     position: absolute;
     width: 700px;
     height: auto;
-
+    border: solid 1px black;
+    visibility: hidden;
 }
 
 .containerCarrocel{
@@ -130,5 +131,6 @@ body{
 }
 
 .atual{
-    z-index: 1000;
+    visibility: visible !important;
+    z-index: 1000 !important;
 }
