@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #272727;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
+    height: 8vh;
+    width: 100vw;
+}
+
+.div-h-l {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 8vh;
+    width: 10vw;
+}
+
+.div-burguer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 8vh;
+    width: 4vw;
+    background-color: #385EED;
+    transition: .2s;
+}
+
+.div-burguer:hover {
+    cursor: pointer;
+    background-color: #5b7fff;
+}
+
+.img-burguer {
+    height: 4vh;
+    transition: .2s;
+}
+
+.img-burguer:hover {
+    height: 4.5vh;
+}
+
+.logo {
+    height: 12vh;
+}
+
+.div-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 8vh;
+    width: 12vw;
+}
+
+h2 {
+    color: #FFFFFF;
+    font-family: Arial;
+    font-style: italic;
+    margin-left: 5vw;
+}
+
+.img-pesquisar {
+    height: 4vh;
+    position: absolute;
+    margin-left: 82.5vw;
+}
+
+.pesquisar {
+    position: relative;
+    width: 15vw;
+    font-family: Arial;
+    color: #969696;
+}
+  
+.pesquisar .input {
+    font-size: 15px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    background: transparent;
+    color: #969696;
+}
+  
+.pesquisar .input:focus {
+    outline: none;
+}
+  
+.pesquisar .label {
+    color: #969696;
+    font-size: 15px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    display: flex;
+}
+  
+.pesquisar .label-char {
+    transition: 0.2s ease all;
+    transition-delay: calc(var(--index) * .05s);
+}
+  
+.pesquisar .input:focus ~ label .label-char,
+.pesquisar .input:valid ~ label .label-char {
+    transform: translateY(-20px);
+    font-size: 14px;
+    color: #9747FF;
+}
+  
+.pesquisar .bar {
+    position: relative;
+    display: block;
+    width: 200px;
+}
+  
+.pesquisar .bar:before,.pesquisar .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #9747FF;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+  
+.pesquisar .bar:before {
+    left: 50%;
+}
+  
+.pesquisar .bar:after {
+    right: 50%;
+}
+  
+.pesquisar .input:focus ~ .bar:before,
+.pesquisar .input:focus ~ .bar:after {
+    width: 50%;
+}
+  
+h3 {
+    color: #FFFFFF;
+    font-family: Arial;
+    margin-top: 5vh;
+}
+
+.div-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    width: 25vw;
+    margin-top: 5vh;
+    border-radius: 15px;
+    box-shadow: inset 1px 1px 5px 1px #000000;
+}
