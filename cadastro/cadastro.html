@@ -16,42 +16,48 @@
         <h1 class="texto-background">DimDim<br>O banco do futuro</h1>
     </div>
 
-    <div class="div-principal">
+    <form class="div-principal">
         <img class="logo" src="../assets/DimDim-removebg-preview.png" alt="logo Dimdim">
-        <h2>Cadastrar-se</h2>
+        <div id="telaTitle">
+            <h2>Cadastrar-se</h2>
+        </div>
+
         <div class="div-input">
-            <input required="" type="text" name="nome" autocomplete="off" class="input">
+            <input required id="NOME" type="text" name="nome" autocomplete="off" class="input">
             <label class="label-text">Nome</label>
         </div>
         <div class="div-input">
-            <input required="" type="text" name="telefone" autocomplete="off" class="input">
+            <input required id="TELEFONE" type="text" name="telefone" autocomplete="off" class="input">
             <label class="label-text">Telefone</label>
         </div>
         <div class="div-input">
-            <input required="" type="text" name="CPF" autocomplete="off" class="input">
+            <input required id="CPF" type="text" name="CPF" autocomplete="off" class="input">
             <label class="label-text">CPF</label>
         </div>
         <div class="div-input">
-            <input required="" type="text" name="CNPJ" autocomplete="off" class="input">
+            <input required id="CNPJ" type="text" name="CNPJ" autocomplete="off" class="input">
             <label class="label-text">CNPJ (opcional)</label>
         </div>
         <div class="div-input-radio">
-            <input type="radio" name="sexo">
+            <input required type="radio" name="sexo">
             <label class="label-radio">Masculino</label>
-            <input type="radio" name="sexo">
+            <input required type="radio" name="sexo">
             <label class="label-radio">Feminino</label>
         </div>
         <div class="div-input">
-            <input required="" type="text" name="e-mail" autocomplete="off" class="input">
+            <input required id="EMAIL" type="text" name="e-mail" autocomplete="off" class="input">
             <label class="label-text">E-mail</label>
         </div>
         <div class="div-input">
-            <input required="" type="password" name="senha" autocomplete="off" class="input">
+            <input required id="SENHA" type="password" name="senha" autocomplete="off" class="input">
             <label class="label-text">Senha</label>
         </div>
-        <input class="botao-cadastrar" type="button" Value="Cadastrar-se" name="cadastrar">
+        <input class="botao-cadastrar" type="button" Value="Cadastrar-se" name="cadastrar" onclick="validaCadastro()">
         <p>Já possui conta? <a href="../login/login.html">Entrar</a></p>
-    </div>
+    </form>
+
+
+
     <!-- <a class="div-voltar" href="../landingpage/landingpage.html">
         <img class="img-voltar" src="../assets/icons8-exportar-100.png" alt="voltar">
         Voltar para tela inicial
@@ -92,5 +98,7 @@
         <input class="botao-cadastrar" type="button" Value="Cadastrar-se" name="cadastrar">
         <p>Já possui conta? <a href="../login/login.html">Entrar</a></p>
     </div> -->
+
+    <script src="../scripts/valida.js"></script>
 </body>
 </html>

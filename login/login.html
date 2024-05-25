@@ -16,24 +16,30 @@
         <h1 class="texto-background">DimDim<br>O banco do futuro</h1>
     </div>
 
-    <div class="div-principal">
+    <form class="div-principal" id="formId">
         <img class="logo" src="../assets/DimDim-removebg-preview.png" alt="logo Dimdim">
-        <h2>Login</h2>
-        <div class="div-input">
-            <input required="" type="text" name="nome" autocomplete="off" class="input">
+        <div id="telaTitle">
+            <h2>Login</h2>
+        </div>
+            <div class="div-input">
+       
+        
+            <input required id="EMAIL" type="text" name="nome" autocomplete="off" class="input">
             <label class="label-text">E-mail</label>
         </div>
         <p class="opcao">Ou</p>
         <div class="div-input">
-            <input required="" type="text" name="CPF" autocomplete="off" class="input">
+            <input required id="CPF" type="text" name="CPF" autocomplete="off" class="input">
             <label class="label-text">CPF</label>
         </div>
         <div class="div-input">
-            <input required="" type="password" name="senha" autocomplete="off" class="input">
+            <input required id="SENHA" type="password" name="senha" autocomplete="off" class="input">
             <label class="label-text">Senha</label>
         </div>
-        <input class="botao-entrar" type="button" Value="Entrar" name="entrar">
+        <input class="botao-entrar" type="button" Value="Entrar" name="entrar" onclick="validaLogin()">
         <p>Não possui conta ainda? <a href="../cadastro/cadastro.html">Criar cadastro</a></p>
-    </div>
+    </form>
+
+    <script src="../scripts/valida.js"></script>
 </body>
 </html>

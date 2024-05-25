@@ -83,7 +83,7 @@ h2 {
     height: 5vh;
 }
    
-.label-text {
+.label-text{
     position: absolute;
     left: 15px;
     color: #BDBDBD;
@@ -94,16 +94,18 @@ h2 {
    
 .input:focus, input:valid {
     outline: none;
-    border: 1px solid #83BDE7;
+    border: 1px solid #d2e0e9;
 }
    
-.input:focus ~ .label-text, .input:valid ~ .label-text {
+.input:focus ~ .label-text, .input:valid ~ .label-text{
     margin-top: 1vh;
     transform: translateX(-9.5vw) scale(1);
     background-color: #27272700;
     padding: 0 .2em;
     color: #83BDE7;
 }
+
+
 
 .div-input-radio {
     display: flex;
@@ -133,6 +135,19 @@ h2 {
 .botao-cadastrar:hover {
     background-color: #46B5A9;
     color: #272727;
+}
+
+#telaTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.errorMessage{
+    font-size: small;
+    color: red;
+    margin-bottom: 15px;
+    margin-top: 10px;
 }
 
 p {
