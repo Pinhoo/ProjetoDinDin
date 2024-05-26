@@ -96,12 +96,14 @@ h2 {
     width: 200px;
     border: none;
     border-bottom: 1px solid #ffffff;
+    border-radius: 0;
     background: transparent;
     color: #969696;
 }
   
 .pesquisar .input:focus {
     outline: none;
+    border: none;
 }
   
 .pesquisar .label {
@@ -214,4 +216,68 @@ h3 {
     transform: translateY(-2.5vh) scale(1);
     background-color: #27272700;
     color: #83BDE7;
+}
+
+.div-textarea {
+    height: 25vh;
+    width: 20vw;
+    margin-top: 3vh;
+    font-family: Arial;
+    color: #BDBDBD;
+    position: relative;
+    background-color: #000000;
+    border-radius: 10px;
+}
+
+.input-textarea {
+    border-bottom: solid 1px #83BDE7;
+    border-right: solid 1px #83BDE7;
+    border-top: solid 1px #272727;
+    border-left: solid 1px #272727;
+    border-radius: 10px;
+    background: none;
+    padding: 2vh;
+    font-size: 2vh;
+    color: #BDBDBD;
+    transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+    width: 20vw;
+    height: 25vh;
+    resize: none;
+}
+
+.label-textarea {
+    position: absolute;
+    left: 15px;
+    color: #BDBDBD;
+    pointer-events: none;
+    transform: translateY(.5rem);
+    transition: 150ms cubic-bezier(0.4,0,0.2,1);
+}
+
+.input-textarea:focus {
+    outline: none;
+    border: 1px solid #83BDE7;
+}
+
+.input-textarea:focus ~ .label-textarea, .input:valid ~ .label-text {
+    transform: translateY(-2.5vh) scale(1);
+    background-color: #27272700;
+    color: #83BDE7;
+}
+
+.botao-transferir {
+    height: 5vh;
+    width: 7vw;
+    border: 1px solid #46B5A9;
+    background-color: #272727;
+    color: #46B5A9;
+    margin-top: 5vh;
+    transition: .3s;
+}
+
+.botao-transferir:hover {
+    background-color: #46B5A9;
+    color: #272727;
+    margin-top: 4vh;
+    cursor: pointer;
 }

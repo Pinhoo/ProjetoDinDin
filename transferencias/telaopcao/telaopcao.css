@@ -96,12 +96,14 @@ h2 {
     width: 200px;
     border: none;
     border-bottom: 1px solid #ffffff;
+    border-radius: 0;
     background: transparent;
     color: #969696;
 }
   
 .pesquisar .input:focus {
     outline: none;
+    border: none;
 }
   
 .pesquisar .label {
