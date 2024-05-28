@@ -5,11 +5,11 @@
 }
 
 body {
-    height: 200vh;
-    width: 97.8vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #272727;
 }
 
 nav {
@@ -19,8 +19,7 @@ nav {
     justify-content: space-between;
     background-color: #000000;
     height: 8vh;
-    width: 99vw;
-    margin-left: 1vw;
+    width: 100vw;
 }
 
 .div-h-l {
@@ -61,10 +60,27 @@ nav {
     height: 12vh;
 }
 
+.div-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 8vh;
+    width: 12vw;
+}
+
+h2 {
+    color: #FFFFFF;
+    font-family: Arial;
+    font-style: italic;
+    margin-left: 5vw;
+    width: 13vw;
+}
+
 .img-pesquisar {
     height: 4vh;
     position: absolute;
-    margin-left: 41.5vw;
+    margin-left: 82.5vw;
 }
 
 .pesquisar {
@@ -72,7 +88,6 @@ nav {
     width: 15vw;
     font-family: Arial;
     color: #969696;
-    margin-left: 10vw;
 }
   
 .pesquisar .input {
@@ -146,188 +161,45 @@ nav {
     width: 50%;
 }
 
-.entrar-cadastrar {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 7vh;
-    width: 17vw;
-    color: #BDBDBD;
-    font-family: Arial;
-    font-size: 13px;
-}
-
-.entrar {
-    color: #46B5A9;
-}
-
-.cadastrar {
-    color: #46B5A9;
-}
-
-.secao-1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    height: 60vh;
-    width: 100vw;
-    background-color: #272727;
-}
-
-.div-esquerda {
+.div-principal {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 60vh;
-    width: 45vw;
-    font-family: Arial;
-}
-
-h1 {
-    color: #46B5A9;
-    text-decoration: underline;
-    margin-top: 5vh;
-}
-
-h2 {
-    color: #46B5A9;
-    text-decoration: underline;
-    margin-top: 1vh;
-}
-
-.p-secao1 {
-    color: #BDBDBD;
-    margin-top: 5vh;
-    width: 20vw;
-    text-align: center;
-}
-
-.botao-ingressar {
-    height: 6vh;
-    width: 12vw;
-    border: 1px solid #9747FF;
-    background-color: #272727;
-    color: #C694F6;
+    justify-content: space-evenly;
+    height: 70vh;
+    width: 50vw;
     margin-top: 10vh;
-    transition: .3s;
-    font-size: 17px;
-}
-
-.botao-ingressar:hover {
-    background-color: #9747FF;
-    color: #272727;
-    margin-top: 9vh;
-    margin-bottom: .5vh;
-    cursor: pointer;
-}
-
-.div-direita {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 60vh;
-    width: 45vw;
+    border-radius: 15px;
+    box-shadow: inset 1px 1px 5px 1px #000000;
     font-family: Arial;
 }
 
-.img-notebook {
-    height: 55vh;
-    border-radius: 3vh;
-}
-
-.secao-2 {
+.informacoes1 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    height: 100vh;
-    width: 100vw;
+    height: 5vh;
+    width: 49vw;
+    background-color: #181818;
+}
+
+.informacoes2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 5vh;
+    width: 49vw;
     background-color: #272727;
 }
 
-.div-horizontal {
-    height: 40vh;
-    width: 90vw;
+.detalhe {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.div-opcoes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 40vh;
-    width: 25vw;
-    border-radius: 3vh;
-    font-family: Arial;
-}
-
-.titulo-atividades {
-    text-decoration: none;
-    color: #BDBDBD;
-}
-
-.img-atividades {
-    height: 30vh;
-    transition: .3s;
-}
-
-.img-atividades:hover {
-    height: 31vh;
-    cursor: pointer;
-}
-
-footer {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 50vh;
-    width: 100vw;
-    background-color: #000000;
-}
-
-.div-footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    height: 40vh;
-    width: 90vw;
-}
-
-.logo-footer {
-    height: 20vh;
-}
-
-.div-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 33vh;
-    width: 30vw;
-    color: #BDBDBD;
-    font-family: Arial;
-}
-
-.h3-footer {
-    text-decoration: underline;
-}
-
-.div-links {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 13vh;
-    width: 30vw;
-    margin-bottom: 10vh;
-}
-
-.a-footer {
-    color: #BDBDBD;
-    font-family: Arial;
-    text-decoration: underline;
+    height: 5vh;
+    width: 15vw;
+    color: #969696;
 }
