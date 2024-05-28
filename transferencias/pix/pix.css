@@ -259,7 +259,7 @@ h3 {
     border: 1px solid #83BDE7;
 }
 
-.input-textarea:focus ~ .label-textarea, .input:valid ~ .label-text {
+.input-textarea:focus ~ .label-textarea, .input-textarea:valid ~ .label-textarea {
     transform: translateY(-2.5vh) scale(1);
     background-color: #27272700;
     color: #83BDE7;
@@ -281,3 +281,46 @@ h3 {
     margin-top: 4vh;
     cursor: pointer;
 }
+
+.botao-voltar{
+    height: 5vh;
+    width: 7vw;
+    border: 1px solid #46B5A9;
+    background-color: #272727;
+    color: #46B5A9;
+    margin-top: 5vh;
+    transition: .3s;
+    text-align: center;
+    text-decoration: none;
+    line-height: 5vh;
+}
+
+.botao-voltar:hover {
+    background-color: #46B5A9;
+    color: #272727;
+    margin-top: 4vh;
+    cursor: pointer;
+}
+
+#errorLocation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.errorMessage{
+    font-size: medium;
+    color: red;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.approvalMessage{
+    font-size: medium;
+    color: rgb(0, 255, 170);
+    margin-bottom: 15px;
+    margin-top: 10px;
+    text-align: center;
+}
+

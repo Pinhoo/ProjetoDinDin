@@ -85,8 +85,102 @@ function validaCadastro(){
     
 }
 
+function validaTed(){
+//const descricao = document.getElementById('DESCRICAO').value;
+
+    const banco = document.getElementById('BANCO').value;
+    const tipo = document.getElementById('TIPO').value;
+    const agencia = document.getElementById('AGENCIA').value;
+    const conta = document.getElementById('CONTA').value;
+    const dv = document.getElementById('DV').value;
+    const pessoa = document.getElementById('PESSOA').value;
+    const nome = document.getElementById('NOME').value;
+    const finalidade = document.getElementById('FINALIDADE').value;
+    const valor = document.getElementById('VALOR').value;
+
+    const cpfOUcnpj = document.getElementById('CPF').value;
+    
+    const message = document.getElementById('errorLocation');
+    
+    const buttonHTML = `
+    
+    <input required="" type="button" name="transferir" value="Transferir" class="botao-transferir" onclick="validaTed()">
+    
+    `
+
+    if( banco != '' && tipo != '' && agencia != '' &&
+        conta != '' && dv != '' && pessoa != '' &&
+        nome != '' && finalidade != '' && valor != '' && 
+        cpfOUcnpj != ''){
+        
+        if(validarCPF(cpfOUcnpj) || validarCNPJ(cpfOUcnpj)){
+            if(validarValor(valor)){
+                message.innerHTML = ` 
+                <p class="approvalMessage">Sua transferência foi realizada com sucesso</p>
+                <a class="botao-voltar" href="../telaopcao/telaopcao.html">Voltar</a>
+            `
+            }
+            else{
+                message.innerHTML =`
+                <p class="errorMessage">Valor inválido</p>
+            ` + buttonHTML
+            }
+           
+        }
+        else{
+            message.innerHTML =`
+                    <p class="errorMessage">CPF/CNPJ inválido</p>
+                ` + buttonHTML
+        }
+
+        
+
+    }
+    else{
+        message.innerHTML = `
+            <p class="errorMessage">Preencha os campos da tranferência</p>
+        ` + buttonHTML
+    }
+}
+
+function validaPix(){
+//const descricao = document.getElementById('DESCRICAO').value;
+
+    const chave = document.getElementById('CHAVE').value;
+    const valor = document.getElementById('VALOR').value;
+    const senha = document.getElementById('SENHA').value;
+
+    const message = document.getElementById('errorLocation');
+    const buttonHTML = `
+    
+    <input required="" type="button" name="transferir" name="transferir" value="Transferir" class="botao-transferir" onclick="validaPix()">
+    `
+
+    if(chave != '' && senha != '' && valor != ''){
+        
+            if(validarValor(valor)){
+                message.innerHTML = ` 
+                <a class="botao-voltar" href="../telaopcao/telaopcao.html">Voltar</a>
+                <p class="approvalMessage">Seu Pix foi realizado com sucesso</p>
+                
+                `
+            }
+            else{
+                message.innerHTML = buttonHTML +`
+                <p class="errorMessage">Valor inválido</p>
+                ` 
+            }
+    }
+    else{
+        message.innerHTML = buttonHTML +`
+        <p class="errorMessage">Preencha os campos da tranferência</p>
+        `
+    }
+    
+}
+
 function validarCPF(strCPF) {
-    console.log("foi")
+
 var Soma;
 var Resto;
 Soma = 0;
@@ -158,4 +252,13 @@ function validarCNPJ(cnpj) {
            
     return true;
     
+}
+
+function validarValor(valor){
+    if(parseFloat(valor) == valor){
+        return true;
+    }
+    else{
+        return false;
+    }
 }

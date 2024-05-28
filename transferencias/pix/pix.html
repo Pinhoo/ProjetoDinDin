@@ -37,24 +37,25 @@
     <h3>Pix</h3>
     <div class="div-principal">
         <div class="div-input">
-            <input required="" type="text" name="valor" autocomplete="off" class="input">
+            <input id="VALOR" required="" type="text" name="valor" autocomplete="off" class="input">
             <label class="label-text">Valor</label>
         </div>
         <div class="div-input">
-            <input required="" type="text" name="chave" autocomplete="off" class="input">
+            <input id="CHAVE" required="" type="text" name="chave" autocomplete="off" class="input">
             <label class="label-text">Chave</label>
         </div>
         <div class="div-input">
-            <input required="" type="password" name="senha" autocomplete="off" class="input">
+            <input id="SENHA" required="" type="password" name="senha" autocomplete="off" class="input">
             <label class="label-text">Senha</label>
         </div>
         <div class="div-textarea">
-            <textarea name="descricao" id="descricao" class="input-textarea"></textarea>
+            <textarea id="DESCRICAO" required="" name="descricao" id="descricao" class="input-textarea"></textarea>
             <label class="label-textarea">Descrição</label>
         </div>
-        <div>
-            <input required="" type="button" name="transferir" name="transferir" value="Transferir" class="botao-transferir">
+        <div id="errorLocation">
+            <input required="" type="button" name="transferir" name="transferir" value="Transferir" class="botao-transferir" onclick="validaPix()">
         </div>
     </div>
+    <script src="../../scripts/valida.js"></script>
 </body>
 </html>

@@ -35,10 +35,10 @@
           </div>
     </nav>
     <h3>Ted</h3>
-    <div class="div-principal">
+    <form class="div-principal">
         <div class="div-horizontal">
             <div class="div-input">
-                <input required="" type="text" name="banco" autocomplete="off" list="bancos" class="input">
+                <input id="BANCO" required="" type="text" name="banco" autocomplete="off" list="bancos" class="input">
                 <datalist id="bancos">
                     <option value="Selecionar"></option>
                     <option value="001 - BANCO DO BRASIL S/A - 00000000"></option>
@@ -62,7 +62,7 @@
                     <option value="037 - BANCO DO ESTADO DO PARA S.A. - 04913711"></option>
                     <option value="040 - BANCO CARGILL S.A - 03609817"></option>
                     <option value="041 - BANCO ESTADO RIO GRANDE SUL S.A. - 92702067"></option>
-                    <option value="047 - BANCO DO ESTADO DE SERGIPE S.A. - 13009717"></option>
+                    <option value=" 7 - BANCO DO ESTADO DE SERGIPE S.A. - 13009717"></option>
                     <option value="060 - CONFIDENCE CORRETORA DE CAMBIO S.A. - 04913129"></option>
                     <option value="062 - HIPERCARD BANCO MULTIPLO S.A. - 03012230"></option>
                     <option value="063 - BANCO BRADESCARD S.A. - 04184779"></option>
@@ -512,7 +512,7 @@
                 <label class="label-text">Banco</label>
             </div>
             <div class="div-input">
-                <input required="" type="text" name="tipo-conta" autocomplete="off" list="tipo-conta" class="input">
+                <input id="TIPO" required="" type="text" name="tipo-conta" autocomplete="off" list="tipo-conta" class="input">
                 <datalist id="tipo-conta">
                     <option value="01 - Conta Corrente"></option>
                     <option value="02 - Conta Poupança"></option>
@@ -523,21 +523,21 @@
         </div>
         <div class="div-horizontal">
             <div class="div-input-agencia-dv">
-                <input required="" type="text" name="agencia" autocomplete="off" class="input-agencia-dv">
+                <input id="AGENCIA" required="" type="text" name="agencia" autocomplete="off" class="input-agencia-dv">
                 <label class="label-text">Agência</label>
             </div>
             <div class="div-input-padrao">
-                <input required="" type="text" name="conta" autocomplete="off" class="input-padrao">
+                <input id="CONTA" required="" type="text" name="conta" autocomplete="off" class="input-padrao">
                 <label class="label-text">Conta</label>
             </div>
             <div class="div-input-agencia-dv">
-                <input required="" type="text" name="dv" autocomplete="off" class="input-agencia-dv">
+                <input id="DV" required="" type="text" name="dv" autocomplete="off" class="input-agencia-dv">
                 <label class="label-text">DV*</label>
             </div>
         </div>
         <div class="div-horizontal">
             <div class="div-input">
-                <input required="" type="text" name="tipo-pessoa" autocomplete="off" list="tipo-pessoa" class="input">
+                <input id="PESSOA" required="" type="text" name="tipo-pessoa" autocomplete="off" list="tipo-pessoa" class="input">
                 <datalist id="tipo-pessoa">
                     <option value="01 - Pessoa Física"></option>
                     <option value="02 - Pessoa Jurídica"></option>
@@ -545,28 +545,28 @@
                 <label class="label-text">Tipo de Pessoa</label>
             </div>
             <div class="div-input-padrao">
-                <input required="" type="text" name="nome" autocomplete="off" class="input-padrao">
+                <input id="NOME" required="" type="text" name="nome" autocomplete="off" class="input-padrao">
                 <label class="label-text">Nome</label>
             </div>
         </div>
         <div class="div-horizontal">
             <div class="div-input-padrao">
-                <input required="" type="text" name="cpf-cnpj" autocomplete="off" class="input-padrao">
+                <input id="CPF" required="" type="text" name="cpf-cnpj" autocomplete="off" class="input-padrao">
                 <label class="label-text">CPF/CNPJ</label>
             </div>
             <div class="div-input-padrao">
-                <input required="" type="text" name="valor" autocomplete="off" class="input-padrao">
+                <input id="VALOR" required="" type="text" name="valor" autocomplete="off" class="input-padrao">
                 <label class="label-text">Valor</label>
             </div>
         </div>
         <div class="div-horizontal2">
             <div class="div-textarea">
-                <textarea name="descricao" id="descricao" class="input-textarea"></textarea>
+                <textarea required="" id="DESCRICAO" name="descricao" class="input-textarea"></textarea>
                 <label class="label-textarea">Descrição</label>
             </div>
             <div class="div-vertical">
                 <div class="div-input">
-                    <input required="" type="text" name="finalidade" autocomplete="off" list="finalidade" class="input">
+                    <input id="FINALIDADE" required="" type="text" name="finalidade" autocomplete="off" list="finalidade" class="input">
                     <datalist id="finalidade">
                         <option value="01 - Pagamento de Impostos, Tributos e Taxas"></option>
                         <option value="02 - Pagamentos de Concessionária de Serviços Públicos"></option>
@@ -587,11 +587,12 @@
                     </datalist>
                     <label class="label-text">Finalidade</label>
                 </div>
-                <div>
-                    <input required="" type="button" name="transferir" name="transferir" value="Transferir" class="botao-transferir">
+                <div id = "errorLocation">
+                    <input required="" type="button" name="transferir" name="transferir" value="Transferir" class="botao-transferir" onclick="validaTed()">
                 </div>
             </div>
         </div>
-    </div>
+    </form>
+    <script src="../../scripts/valida.js"></script>
 </body>
 </html>
